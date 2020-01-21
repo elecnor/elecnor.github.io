@@ -1,0 +1,81 @@
+/*
+ * https://elecnor.github.io
+ * elecnor v1.0.0
+ * copyright 2020 by elecnor
+ * created on 2020/01/20 20:37
+ * author fernando silva
+ */
+
+@charset "utf-8";
+
+#div_content {
+    max-width: 987px;
+}
+
+.footer {
+    font-size: 13px;
+}
+
+.button_projects {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    height: 89px;
+    margin: 13px;
+    width: 233px;
+}
+
+.button_projects:hover {
+    box-shadow: 5px 5px 13px rgba(89, 89, 89, 0.8);
+    transition: 0.3s;
+}
+
+#button_project0 {
+    background-image: url("../logo/neoenergia.png");
+    background-size: 144px;
+}
+
+#button_project1 {
+    background-image: url("../logo/pate.png");
+    background-size: 178px;
+}
+
+#button_project2 {
+    background-image: url("../logo/site.png");
+    background-size: 157px;
+}
+
+#button_project3 {
+    background-image: url("../logo/saojoaopiaui.png");
+    background-size: 157px;
+}
+
+#button_project4 {
+    background-image: url("../logo/saofernando.png");
+    background-size: 178px;
+}
+
+#button_project5 {
+    background-image: url("../logo/msg.png");
+    background-size: 89px;
+}
+
+#div_buttons {
+    background-color: #4D6A79;
+    margin-right: 5px;
+    right: 13px;
+}
+
+#iframe_maps {
+    border: none;
+    min-height: 98vh;
+    width: 100%;
+}
+
+.button_iframe {
+    width: 89px;
+}
