@@ -15,33 +15,33 @@ var projects = [
     ],
     /* 1 */
     [
-        ["LT 230 KV ORIXIMINÁ - JURUTI", brazil],
-        ["LT 230 KV JURUTI - PARINTINS", brazil]
+        ["LT 230 KV ORIXIMINÁ - JURUTI", "https://www.google.com/maps/d/embed?mid=1RB07k0uE47ZHeYyCiWW3RjOpinUkIp7w"],
+        ["LT 230 KV JURUTI - PARINTINS", "https://www.google.com/maps/d/embed?mid=1Khg7Y5FHYg1KlOwThv2OdOSiangeOBhD"]
     ],
     /* 2 */
     [
-        ["LT 500 KV PARNAÍBA -TIANGUA", brazil],
-        ["LT 230 KV IBIAPINA - TIANGUÁ", brazil],
-        ["LT 230 KV IBIAPINA - PIRIPIRI", brazil],
-        ["LT 230 KV PIRIPIRI - TERESINA", brazil],
-        ["LT 230 KV ACARAÚ II - ACARAÚ III", brazil],
-        ["SECC. LT 500 KV TIANGUÁ - SOBRAL", brazil],
-        ["SECC. LT 500 KV TERESINA - TIANGUÁ", brazil],
+        ["LT 500 KV PARNAÍBA -TIANGUA", "https://www.google.com/maps/d/embed?mid=12fr8dvfOSLr6SLmb17HNNHS8agPSkKYW"],
+        ["LT 230 KV IBIAPINA - TIANGUÁ", "https://www.google.com/maps/d/embed?mid=1VljyviybDxIyTsasZXhkV5akpxaUUmXu"],
+        ["LT 230 KV IBIAPINA - PIRIPIRI", "https://www.google.com/maps/d/embed?mid=1XQfcYT61JcPb9Pjv0OHf2GoBaXSpdFL9"],
+        ["LT 230 KV PIRIPIRI - TERESINA", "https://www.google.com/maps/d/embed?mid=1XnnikNeOefeZGNQYfkyWTG1VUq1NeKC1"],
+        ["LT 230 KV ACARAÚ II - ACARAÚ III", "https://www.google.com/maps/d/embed?mid=18jsQeL4Bp_AZx_Zql0M3oDEIPg8-XERx"],
+        ["SECC. LT 500 KV TIANGUÁ - SOBRAL", "https://www.google.com/maps/d/embed?mid=1eaX4vGNdhSACb7g8vOsulS_V86e3KhN4"],
+        ["SECC. LT 500 KV TERESINA - TIANGUÁ", "https://www.google.com/maps/d/embed?mid=1xN29d_0-ONBkYMjO7HnIw8YOf7dOXVgR"],
     ],
     /* 3 */
     [
-        ["LT 500 KV COLETORA FV SÃO JOÃO DO PIAUÍ", brazil]
+        ["LT 500 KV COLETORA FV SÃO JOÃO DO PIAUÍ", "https://www.google.com/maps/d/embed?mid=13RtoaKQCeMqVZ89RRV7IKTxGuDY9k9NH"]
     ],
     /* 4 */
     [
-        ["LT 230 KV MONTE DO RONCA - JOÃO CÂMARA III", brazil]
+        ["LT 230 KV MONTE DO RONCA - JOÃO CÂMARA III", "https://www.google.com/maps/d/embed?mid=17zRtTnHkRs6MThC9uOWm9WZh3GwEl83-"]
     ],
     /* 5 */
     [
-        ["LT 500 KV ARARAQUARA 2 - FERNÃO DIAS", brazil],
-        ["LT 500 KV ARARAQUARA 2 - ITATIBA", brazil],
-        ["SECC. LT 500 KV CAMPINAS - CACHOEIRA PAULISTA", brazil],
-        ["SECC. LT 440 KV BOM JARDIM - TAUBATÉ", brazil]
+        ["LT 500 KV ARARAQUARA 2 - FERNÃO DIAS", "https://www.google.com/maps/d/embed?mid=1prRTTlk79Lf5QLclJme9Et_OT4ZcROBg"],
+        ["LT 500 KV ARARAQUARA 2 - ITATIBA", "https://www.google.com/maps/d/embed?mid=1Ht7eLZdkjOVWGQpCTw5LiQmmHD5wuxAZ"],
+        ["SECC. LT 500 KV CAMPINAS - CACHOEIRA PAULISTA", "https://www.google.com/maps/d/embed?mid=1IaMBu5tyXEdVjnanakq-CWBMcPO3vg0f"],
+        ["SECC. LT 440 KV BOM JARDIM - TAUBATÉ", "https://www.google.com/maps/d/embed?mid=1iC7XY5iZkUG16lXl9ZhB98K0s7Ieaoqn"]
     ]
 ]
 
