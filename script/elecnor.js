@@ -47,11 +47,11 @@ var projects = [
 
 var powerbi = [
     /* 0 */
-    ["Efetivo", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
+    ["Efetivo", "https://app.powerbi.com/view?r=eyJrIjoiYzE2ZWJmZTUtNTAxYy00ZGJlLWFjNWItMTQzZTBjNDhhZWNmIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
     /* 1 */
     ["Veículos", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
     /* 2 */
-    ["Equipamentos", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"]
+    ["Ferramental", "https://app.powerbi.com/view?r=eyJrIjoiZGY0MzNlMzAtN2E2OC00NjgzLThhNmMtNDI2YTAyNTQ3MjdjIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"]
 ]
 
 function loadMaps(parameter) {
