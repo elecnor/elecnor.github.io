@@ -19,7 +19,6 @@
 .button_menu {
     border-radius: 8px;
     height: 144px;
-    margin: 13px;
     width: 144px;
 }
 
@@ -74,7 +73,12 @@
 #div_buttons {
     background-color: #4D6A79;
     margin-right: 2px;
+    padding: 7.7px;
     right: 13px;
+}
+
+.div_title {
+    line-height: 2.0;
 }
 
 #iframe_maps {

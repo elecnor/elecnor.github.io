@@ -45,6 +45,15 @@ var projects = [
     ]
 ]
 
+var powerbi = [
+    /* 0 */
+    ["Efetivo", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
+    /* 1 */
+    ["Veículos", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
+    /* 2 */
+    ["Equipamentos", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"]
+]
+
 function loadMaps(parameter) {
     var identifier = parameter.id;
     var element    = document.getElementById(identifier);
@@ -52,7 +61,7 @@ function loadMaps(parameter) {
     list.innerHTML = "";
     if (projects[element.value].length > 1) {
         element.setAttribute("data-toggle", "modal");
-        element.setAttribute("data-target", "#exampleModal");
+        element.setAttribute("data-target", "#modal_projects");
         for (var a = 0; a < projects[element.value].length; a++) {
             var tagButton = document.createElement("button");
             tagButton.setAttribute("type", "button");
@@ -67,6 +76,13 @@ function loadMaps(parameter) {
         document.cookie = "link=" + projects[element.value][0][1] + "; path=/";
         location.href   = "maps";
     }
+}
+
+function loadPowerbi(parameter) {
+    var identifier  = parameter.id
+    var element     = document.getElementById(identifier).value;
+    document.cookie = "value=" + element + "; path=/";
+    location.href   = "powerbi";
 }
 
 function getLink(parameter) {
@@ -84,9 +100,22 @@ function getCookie(parameter) {
     };
 }
 
-function updateIframe() {
+function updateMaps() {
     var cookie = getCookie("link") ? getCookie("link") : brazil;
     document.getElementById("iframe_maps").setAttribute("src", cookie);
+}
+
+function updatePowerbi() {
+    var value   = getCookie("value") ? getCookie("value") : null;
+    var element = document.getElementById("div_title");
+    var tagI    = document.createElement("i");
+    tagI.setAttribute("class", "fas fa-chart-bar");
+    var tagSpan = document.createElement("span");
+    tagSpan.setAttribute("class", "ml-1");
+    tagSpan.innerHTML = "Análise de Dados - " + powerbi[parseInt(value)][0];
+    element.appendChild(tagI);
+    element.appendChild(tagSpan);
+    document.getElementById("iframe_powerbi").setAttribute("src", powerbi[parseInt(value)][1]);
 }
 
 function goIndex() {
@@ -95,8 +124,4 @@ function goIndex() {
 
 function goProjects() {
     location.href = "projects";
-}
-
-function goPowerbi() {
-    location.href = "powerbi";
 }
