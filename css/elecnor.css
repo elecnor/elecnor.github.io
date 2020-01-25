@@ -16,6 +16,13 @@
     font-size: 13px;
 }
 
+.button_menu {
+    border-radius: 8px;
+    height: 144px;
+    margin: 13px;
+    width: 144px;
+}
+
 .button_projects {
     background-color: transparent;
     background-position: center;
@@ -66,7 +73,7 @@
 
 #div_buttons {
     background-color: #4D6A79;
-    margin-right: 5px;
+    margin-right: 2px;
     right: 13px;
 }
 
@@ -76,6 +83,12 @@
     width: 100%;
 }
 
-.button_iframe {
+#button_map {
+    background-color: #DB4437;
+    color: #FFFFFF;
     width: 89px;
+}
+
+#img_elecnor {
+    max-height: 34px;
 }

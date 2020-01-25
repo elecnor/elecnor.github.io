@@ -89,6 +89,14 @@ function updateIframe() {
     document.getElementById("iframe_maps").setAttribute("src", cookie);
 }
 
-function backIndex() {
+function goIndex() {
     location.href = "index";
+}
+
+function goProjects() {
+    location.href = "projects";
+}
+
+function goPowerbi() {
+    location.href = "powerbi";
 }
