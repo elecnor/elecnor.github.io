@@ -52,6 +52,8 @@ var powerbi = [
     ["Veículos", "https://app.powerbi.com/view?r=eyJrIjoiZTIxZDY1ZWYtMTAxMS00MjEzLThhNDgtZGQ4ZmJjM2JiNjMzIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
     /* 2 */
     ["Ferramental", "https://app.powerbi.com/view?r=eyJrIjoiZGY0MzNlMzAtN2E2OC00NjgzLThhNmMtNDI2YTAyNTQ3MjdjIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"]
+    /* 3 */
+    ["Custo", "https://app.powerbi.com/view?r=eyJrIjoiM2NiMzEwNjQtYTUwYi00OTc4LWJhZDItMmNhOWY1OGFlYjUxIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"]
 ]
 
 function loadMaps(parameter) {
