@@ -53,7 +53,9 @@ var powerbi = [
     /* 2 */
     ["Ferramental", "https://app.powerbi.com/view?r=eyJrIjoiZGY0MzNlMzAtN2E2OC00NjgzLThhNmMtNDI2YTAyNTQ3MjdjIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
     /* 3 */
-    ["Custo", "https://app.powerbi.com/view?r=eyJrIjoiM2NiMzEwNjQtYTUwYi00OTc4LWJhZDItMmNhOWY1OGFlYjUxIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"]
+    ["Custo", "https://app.powerbi.com/view?r=eyJrIjoiM2NiMzEwNjQtYTUwYi00OTc4LWJhZDItMmNhOWY1OGFlYjUxIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
+    /* 4 */
+    ["Equipe", "https://app.powerbi.com/view?r=eyJrIjoiNDU1M2Y1YzgtZmM0OC00NjkwLWFlOTEtYmJmMzk4MzgxN2FlIiwidCI6IjRmN2UwZTk4LTMyM2EtNDIyYy04YzI1LWFlNjdkMWE4OWI3NyIsImMiOjh9"],
 ]
 
 function loadMaps(parameter) {
