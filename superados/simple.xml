@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <name>LT 230 KV Corumbá II - Anastácio (CS)</name>
+        <Folder>
+            <name>Faixa de Servidão</name>
+            <Placemark>
+                <name>Traçado</name>
+                <LineString>
+                    <coordinates>
+                        -45.37101767633774,-11.45267213545023,0 -45.38347193158391,-11.50633966895036,0 -45.39471780660606,-11.55693102531901,0 -45.42145972583288,-11.57444868045307,0
+                    </coordinates>
+                </LineString>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>Torres</name>
+            <Placemark>
+                <name>SE Corumbá II</name>
+                <Point>
+                    <coordinates>-45.37101767633774,-11.45267213545023,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>0/1</name>
+                <Point>
+                    <coordinates>-45.38347193158391,-11.50633966895036,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>0/2</name>
+                <Point>
+                    <coordinates>-45.39471780660606,-11.55693102531901,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>1/1</name>
+                <Point>
+                    <coordinates>-45.42145972583288,-11.57444868045307,0</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>Fundiário</name>
+            <Placemark>
+                <name>2018.003</name>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <coordinates>
+                                -45.37798255522795,-11.44617702558317,0 -45.37753922716058,-11.46153353861153,0 -45.36229065984025,-11.45880776325932,0 -45.36406079102923,-11.45048040215225,0 -45.36784949269081,-11.44390436328586,0 -45.37798255522795,-11.44617702558317,0 
+                            </coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>

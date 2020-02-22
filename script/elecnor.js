@@ -129,3 +129,7 @@ function goIndex() {
 function goProjects() {
     location.href = "projects";
 }
+
+function goTable() {
+    location.href = "table";
+}
