@@ -1,98 +1,61 @@
 /*
  * https://elecnor.github.io
- * elecnor v1.0.0
- * copyright 2020 by elecnor
- * created on 2020/01/20 20:37
+ * etecdados v1.0.0
+ * copyright 2020 by etecdados
+ * created on 2020/05/26 07:30
  * author fernando silva
+ * last update on 2020/05/26
  */
 
-@charset "utf-8";
 
-#div_content {
-    max-width: 987px;
+ .button_geral {
+     width: 170px;
+ }
+.panel_link {
+    height: 120px;
+    width: 150px;
 }
 
-.footer {
-    font-size: 13px;
+.panel_content {
+    height: 50px;
 }
 
-.button_menu {
-    border-radius: 8px;
-    height: 144px;
-    width: 144px;
+#div_estoque,
+#div_section2,
+#div_historico
+{
+    max-width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
-.button_projects {
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    height: 89px;
-    margin: 13px;
-    width: 233px;
+#div_procurar {
+    max-width: 600px;
 }
-
-.button_projects:hover {
-    box-shadow: 5px 5px 13px rgba(89, 89, 89, 0.8);
-    transition: 0.3s;
-}
-
-#button_project0 {
-    background-image: url("../logo/neoenergia.png");
-    background-size: 144px;
-}
-
-#button_project1 {
-    background-image: url("../logo/pate.png");
-    background-size: 178px;
-}
-
-#button_project2 {
-    background-image: url("../logo/site.png");
-    background-size: 157px;
-}
-
-#button_project3 {
-    background-image: url("../logo/saojoaopiaui.png");
-    background-size: 157px;
-}
-
-#button_project4 {
-    background-image: url("../logo/saofernando.png");
-    background-size: 178px;
-}
-
-#button_project5 {
-    background-image: url("../logo/msg.png");
-    background-size: 89px;
-}
-
-#div_buttons {
-    background-color: #4D6A79;
-    margin-right: 2px;
-    padding: 7.6px;
-    right: 13px;
-}
-
-.div_title {
-    line-height: 2.0;
-}
-
-#iframe_maps {
-    border: none;
-    min-height: 98vh;
+#table_estoque,
+#table_cadastro,
+#table_historico
+{
+    font-size: 12px;
+    white-space: nowrap;
+    border-collapse: collapse;
+    line-height: normal;
     width: 100%;
 }
 
-#button_map {
-    background-color: #DB4437;
+#table_estoque thead tr th,
+#table_cadastro thead tr th,
+#table_historico thead tr th
+{
+    background-color: #6C757D;
     color: #FFFFFF;
-    width: 89px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-#img_elecnor {
-    max-height: 34px;
+#div_transferencia,
+#div_banco {
+    max-width: 500px;
 }

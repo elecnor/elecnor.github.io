@@ -1,112 +1,66 @@
 <!DOCTYPE html>
- <!--
-	 For God so loved the world that he gave his one and only Son,
-	 that whoever believes in him shall not perish but have eternal life.
-	 (John 3:16)
- -->
 <html lang="pt-br">
-    <!-- head -->
-	<head>
-        <!-- title -->
-        <title>Elecnor Brasil - SGGR</title>
-        <!-- meta -->
+    <head>
+        <title>Elecnor</title>
         <meta charset="utf-8">
-        <meta name="viewport"    content="width=device-width, initial-scale=1">
-        <meta name="author"      content="fernando silva">
-        <meta name="contact"     content="fernando.silva@elecnor.com / +55 (21) 979270962">
-        <meta name="description" content="elecnor">
-        <meta name="keywords"    content="elecnor, brasil">
-        <!-- link -->
-        <link type="image/x-icon" rel="icon"       href="favicon/elecnor.ico">
-        <link type="text/css"     rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link type="text/css"     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link type="text/css"     rel="stylesheet" href="css/elecnor.css">
-        <!-- script -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- version 4.3.1  -->
-        <script type="text/javascript" src="script/elecnor.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author"      content="fernando silva">
+		<meta name="contact"     content="fernando.silva@elecnor.com / +55 21 979-270-962">
+        <!-- css only -->
+        <link rel="icon"       href="favicon/elecnor.ico" type="image/x-icon" > <!-- version 1.0.0  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="css/elecnor.css" type="text/css">
     </head>
-    <!-- body -->
     <body>
-        <!-- container -->
         <div class="container-fluid">
-            <!-- header -->
-            <header class="text-center border-bottom mt-3">
-                <img src="logo/elecnor.png" alt="logo elecnor">
-                <div class="mt-3 mb-3">
-                    <span>Subdireção Geral Grandes Redes<br>(SGGR Brasil)</span>
+            <div class="m-auto text-center">
+                <header class="p-3 border-bottom">
+                    <img alt="logo elecnor" src="images/elecnor.png">
+                </header>
+                <div class="p-3">
+                    <h4>
+                        <i class="fas fa-sitemap"></i>
+                        <span>Gestão de Materiais</span>
+                    </h4>
                 </div>
-            </header>
-            <!-- content -->
-            <div class="text-center m-auto" id="div_content">
-                <div class="m-3 pb-5">
-                    <button class="m-2 button_menu" onclick="goProjects()" id="button_menu1">
-                        <h1>
-                            <i class="fas fa-map-marked-alt"></i>
-                        </h1>
-                        <span>Mapas</span>
-                    </button>
-                    <button class="m-2 button_menu" onclick="" id="button_menu2" data-toggle="modal" data-target="#modal_powerbi">
-                        <h1>
-                            <i class="fas fa-chart-bar"></i>
-                        </h1>
-                        <span>Análise de Dados</span>
-                    </button>
-                    <button class="m-2 button_menu" onclick="goTable()" id="button_menu3">
-                        <h1>
-                            <i class="fas fa-table"></i>
-                        </h1>
-                        <span>Tabela</span>
-                    </button>
-                </div>
-            </div>
-            <!-- footer -->
-            <div class="fixed-bottom border-top text-center text-secondary pb-3 bg-white footer">
-                <span>Copyright &copy; 2020 Elecnor do Brasil Ltda</span>
-                <br>
-                <span>Website desenvolvido por Fernando Silva</span>
-            </div>
-            <!-- modal -->
-            <div class="modal fade" id="modal_powerbi" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-sm" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-info">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Análise de Dados</span>
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                        <div class="modal-body">
-                            <div class="list-group">
-                                <button type="button" class="list-group-item list-group-item-action" onclick="loadPowerbi(this)" value="0" id="button_powerbi0">
-                                    <i class="fas fa-users"></i>
-                                    <span class="ml-1">Efetivo</span>
-                                </button>
-                                <button type="button" class="list-group-item list-group-item-action" onclick="loadPowerbi(this)" value="1" id="button_powerbi1">
-                                    <i class="fas fa-tractor"></i>
-                                    <span class="ml-1">Veículos</span>
-                                </button>
-                                <button type="button" class="list-group-item list-group-item-action" onclick="loadPowerbi(this)" value="2" id="button_powerbi2">
-                                    <i class="fas fa-tools"></i>
-                                    <span class="ml-1">Ferramental</span>
-                                </button>
-                                <button type="button" class="list-group-item list-group-item-action" onclick="loadPowerbi(this)" value="3" id="button_powerbi3">
-                                    <i class="fas fa-donate"></i>
-                                    <span class="ml-1">Custo</span>
-                                </button>
-                                <button type="button" class="list-group-item list-group-item-action" onclick="loadPowerbi(this)" value="4" id="button_powerbi4">
-                                    <i class="fas fa-people-carry"></i>
-                                    <span class="ml-1">Equipe</span>
-                                </button>
-                            </div>
-                        </div>
+                <a class="btn btn-outline-info m-2 panel_link" href="cadastro">
+                    <h1 class="m-0 panel_content">
+                        <i class="fas fa-box-open"></i>
+                    </h1>
+                    <div class="panel_content">
+                        <span>Cadastro de Materiais</span>
                     </div>
-                </div>
+                </a>
+                <a class="btn btn-outline-info m-2 panel_link" href="estoque">
+                    <h1 class="m-0 panel_content">
+                        <i class="fas fa-boxes"></i>
+                    </h1>
+                    <div class="panel_content">
+                        <span>Controle de Estoque</span>
+                    </div>
+                </a>
+                <a class="btn btn-outline-info m-2 panel_link" href="transferencia">
+                    <h1 class="m-0 panel_content">
+                        <i class="fas fa-people-carry"></i>
+                    </h1>
+                    <div class="panel_content">
+                        <span>Transferência de Materiais</span>
+                    </div>
+                </a>
+                <a class="btn btn-outline-info m-2 panel_link" href="historico">
+                    <h1 class="m-0 panel_content">
+                        <i class="fas fa-history"></i>
+                    </h1>
+                    <div class="panel_content">
+                        <span>Histórico</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </body>    
+        <!-- js, popper.js, and jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Elecnor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author"      content="fernando silva">
+		<meta name="contact"     content="fernando.silva@elecnor.com / +55 21 979-270-962">
+        <!-- css only -->
+        <link rel="icon"       href="favicon/elecnor.ico" type="image/x-icon" > <!-- version 1.0.0  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="css/elecnor.css" type="text/css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="m-auto">
+                <header class="p-3 text-center border-bottom">
+                    <img alt="logo elecnor" src="images/elecnor.png">
+                </header>
+                <div class="text-center pt-3">
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-people-carry"></i>
+                        <span>Transferência de Materiais</span>
+                    </div>
+                </div>
+                
+                <div id="div_transferencia" class="m-auto border p-3">
+                    <form>
+                        <!-- radio -->
+                        <div>
+                            <input class="form-control" type="text" placeholder="Tipo de Transferência" disabled>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio" id="radio1" value="1" onclick="radioSelect(this)" checked>
+                                <label class="form-check-label" for="radio1">
+                                    <span>De projeto para projeto</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio" id="radio2" value="2" onclick="radioSelect(this)">
+                                <label class="form-check-label" for="radio2">
+                                    <span>De canteiro para canteiro</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input class="form-control mt-3" type="text" placeholder="Origem / Destino" disabled>
+                        <!-- select 1 -->
+                        <div class="d-block" id="div_select1">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label>De:</label>
+                                <select class="form-control">
+                                    <option selected></option>
+                                    <option>350034</option>
+                                    <option>350035</option>
+                                    <option>350046</option>
+                                    <option>350048</option>
+                                    <option>350050</option>
+                                    <option>350052</option>
+                                    <option>350052</option>
+                                    <option>350053</option>
+                                    <option>400004</option>
+                                    <option>550000</option>
+                                </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label>Para:</label>
+                                <select class="form-control">
+                                    <option selected></option>
+                                    <option>350034</option>
+                                    <option>350035</option>
+                                    <option>350046</option>
+                                    <option>350048</option>
+                                    <option>350050</option>
+                                    <option>350052</option>
+                                    <option>350052</option>
+                                    <option>350053</option>
+                                    <option>400004</option>
+                                    <option>550000</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- select 2 -->
+                        <div class="d-none" id="div_select2">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label>De:</label>
+                                <select class="form-control">
+                                    <option selected></option>
+                                    <option>ESTIVA GERBI - SP</option>
+                                    <option>TIANGUA - CE</option>
+                                    <option>PIRIPIRI - PI</option>
+                                    <option>SANTAREM - PA</option>
+                                    <option>BARREIRAS - BA</option>
+                                    <option>PARANAZINHO - RN</option>
+                                </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label>Para:</label>
+                                <select class="form-control">
+                                    <option selected></option>
+                                    <option>ESTIVA GERBI - SP</option>
+                                    <option>TIANGUA - CE</option>
+                                    <option>PIRIPIRI - PI</option>
+                                    <option>SANTAREM - PA</option>
+                                    <option>BARREIRAS - BA</option>
+                                    <option>PARANAZINHO - RN</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" id="div_lista">
+                            <input class="form-control" type="text" placeholder="Lista" disabled>
+                            <select class="form-control mt-2" id="select1">
+                                <option selected></option>
+                                <option>ARC0001  - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0002 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0003 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0004 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0005 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0006 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0007 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0008 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0009 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0010 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0011 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0012 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0013 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0014 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0015 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0016 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0017 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>ARC0018 - AR CONDICIONAL SPLINTER 7.500 BTUSPL-789DD</option>
+                                <option>BAR0001 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0002 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0003 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0004 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0005 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0006 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0007 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0008 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0009 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0010 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0011 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0012 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0013 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0014 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0015 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0016 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0017 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0018 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0019 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0020 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0021 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0022 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0023 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0024 - BARRACA TROP TRAD 8X16 DORMITORIO</option>
+                                <option>BAR0025 - BARRACA TROP TRAD 8X16 ESCRITORIO</option>
+                                <option>BAR0026 - BARRACA TROP TRAD 8X16 ESCRITORIO</option>
+                                <option>BAR0027 - BARRACA TROP TRAD 8X16 A</option>
+                                <option>BAR0028 - BARRACA TROP TRAD 8X16 A</option>
+                                <option>BAR0029 - BARRACA TROP TRAD 8X16 A</option>
+                                <option>BAR0030 - BARRACA TROP TRAD 8X16 A</option>
+                                <option>BAR0031 - BARRACA TROP TRAD 8X16 A</option>
+                                <option>BAR0032 - BARRACA TROP TRAD 8X16 A</option>
+                                <option>MOT0001 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0002 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0003 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0004 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0005 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0006 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0007 - MOTOSSERRA MS382 33CM/13 36RS STIHL 1192000243</option>
+                                <option>MOT0008 - MOTOSSERRA MS382 33CM/13 36RS STIHL 1192000243</option>
+                                <option>MOT0009 - MOTOSSERRA MS382 50CM/20 36RS STIHL 1192000241</option>
+                                <option>MOT0010 - MOTOSSERRA MS382 50CM/20 36RS STIHL 1192000241</option>
+                                <option>MOT0011 - MOTOSSERRA MS382 50CM/20 36RS STIHL 1192000241</option>
+                                <option>MOT0012 - MOTOSSERRA MS382 50CM/20 36RS STIHL 1192000241</option>
+                                <option>SER0001 - SERRA CIRCULAR GKS 65 GCE BOSCH 06016687E1000</option>
+                                <option>ROC0001 - ROÇADEIRA FS 220 DM 305MM 12 STIHL 41192000032</option>
+                                <option>SER0002 - SERRA CIRCULAR GKS 65 GCE BOSCH 06016687E1000</option>
+                                <option>MOT0013 - MOTOSSERRA MS382 40CM/16 36RS STIHL 1192000240</option>
+                                <option>MOT0014 - MOTOSSERRA MS382 50CM/20 36RS STIHL 1192000241</option>
+                                <option>BOM0001 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58244</option>
+                                <option>BOM0002 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58226</option>
+                                <option>BOM0003 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58227</option>
+                                <option>BOM0004 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58236</option>
+                                <option>BOM0005 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58237</option>
+                                <option>BOM0006 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58238</option>
+                                <option>BOM0007 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58239</option>
+                                <option>BOM0008 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58240</option>
+                                <option>BOM0009 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58241</option>
+                                <option>BOM0010 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58242</option>
+                                <option>BOM0011 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58243</option>
+                                <option>BOM0012 - BOMBA SUBM. DE MANGOTE BWA-500-ST X 10M - BOCAL 2 POL. - N° SÉRIE: BW-58245</option>                             
+                            </select>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-button btn-sm btn-danger m-2 button_geral" id="button_adicionar">
+                                <i class="fas fa-plus"></i>
+                                <span>Adicionar</span>
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comentários</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-center p-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary button_geral m-2" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fas fa-list-ul"></i>
+                        <span>Gerar Romaneio</span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title text-success" id="exampleModalLabel">
+                                <i class="far fa-check-circle"></i>
+                                <span>Sucesso!</span>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <span>Romaneio gerado com sucesso.</span>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="index" class="btn btn-button btn-info button_geral">
+                        <i class="fas fa-reply"></i>
+                        <span>Voltar</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- js, popper.js, and jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                // clone
+                $("#button_adicionar").click(function(){
+                    $("#select1").clone().appendTo("#div_lista");
+                });
+            });
+            // radio
+            function radioSelect(parameter) {
+                value = parseInt(parameter.value);
+                console.log(value);
+                if (value == 1) {
+                    $("#div_select1 select").val("");
+                    $("#div_select1").attr("class", "d-block");
+                    $("#div_select2").attr("class", "d-none");
+                } else {
+                    $("#div_select2 select").val("");
+                    $("#div_select2").attr("class", "d-block");
+                    $("#div_select1").attr("class", "d-none");
+                }
+            }
+        </script>
+    </body>
+</html>
